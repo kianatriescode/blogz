@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<br>    
+<h1  align = "center">{{blogpage.name}}</h1>
+
+<p>{{blogpage.body}}</p>
+<p>written by <a href="/blog?user={{blogpage.owner_id}}" class="btn btn-primary btn-xs">{{blogpage.owner.username}}</a>
+{% endblock %}
